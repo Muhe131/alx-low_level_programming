@@ -7,22 +7,25 @@
  * Description: function that computes the absolute value
  *  of an integer.
  *
- * @a:the integer to compute its absolute value
+ * @n:the integer to compute its absolute value
  *
  * Return: returns the abs value
  *
  */
 
-int _abs(int a)
+int _abs(int n)
 {
-	int k = a;
-	int absvalue;
-
-	if (k < 0)
+	if (n > 0)
 	{
-		k = k * (-1);
+		return (n);
 	}
-	absvalue = a;
-	return (absvalue);
+	else if (n < 0)
+	{
+	return (-n);
+	}
+	else
+	{
+		return (n);
+	}
 }
 
