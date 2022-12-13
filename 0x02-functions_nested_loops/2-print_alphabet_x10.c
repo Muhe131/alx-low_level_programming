@@ -2,7 +2,7 @@
 
 
 /**
- * void print_alphabet_x10(void) - entry point
+ * print_alphabet_x10 - entry point
  *
  * Description: function that prints 10 times the alphabet,
  * in lowercase, followed by a new line
