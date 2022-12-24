@@ -1,25 +1,28 @@
 #include <stdio.h>
 
 /**
- * main - Prints the add of the Fibonacci numbers
+ * main - Prints the first 52 fibonacci numbers
  *
- * Return: Always 0.
+ * Return: Nothing!
  */
-
 int main(void)
 {
-	int c;
-	long int n1, n2, fn;
+	int i = 0;
+	long j = 1, k = 2;
 
-	n1 = 1;
-	n2 = 2;
-	printf("%ld, %ld", n1, n2);
-	for (c = 0; c < 48;)
+	while (i < 50)
 	{
-		fn = n1 + n2;
-		printf(", %ld", fn);
-		n1 = n2;
-		n2 = fn;
+		if (i == 0)
+			printf("%ld", j);
+		else if (i == 1)
+			printf(", %ld", k);
+		else
+		{
+			k += j;
+			j = k - j;
+			printf(", %ld", k);
+		}
+		++i;
 	}
 	printf("\n");
 	return (0);
